@@ -1,0 +1,16 @@
+
+<project name="transform" default="startService" basedir=".">
+
+
+<target name="startService">
+<exec   executable="/usr/local/bin/docker" >
+    <arg value="compose"/>
+	
+	<arg value="-f"/>
+	<arg value="docker-compose-local.yml"/>
+	
+	<arg value="down"/>
+</exec>
+</target>
+
+</project>

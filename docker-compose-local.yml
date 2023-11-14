@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mdmi-gettingstarted:
+    image: mdmiservices/transformation:latest
+    mem_reservation: 4048m
+    container_name: mdmi-gettingstarted
+    environment:
+      - JAVA_OPTS="-Xmx6048m -DLOGGING_LEVEL_ROOT=TRACE -DLOGGING_LEVEL_MDMI=TRACE"
+    network_mode: default
+    ports:
+      - "8282:8282"
+    restart: always
+    volumes:   
+     - ./src/main/resources/maps:/maps
+
