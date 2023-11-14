@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.apex.cda2fhir</groupId>
-  <artifactId>com.apex.cda2fhir</artifactId>
+  <groupId>org.mdmi</groupId>
+  <artifactId>org.mdmi.getttingstarted</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>org.mdmi.getttingstarted</name>
   <description>org.mdmi.getttingstarted</description>
