@@ -3,7 +3,7 @@
 
 
 <target name="startService">
-<exec   executable="/usr/local/bin/docker" >
+<exec   executable="docker" >
     <arg value="compose"/>
 	
 	<arg value="-f"/>
