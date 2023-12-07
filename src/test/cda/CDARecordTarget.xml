@@ -22,7 +22,7 @@
 	<recordTarget>
 		<patientRole>
 			<id extension="444222222" root="2.16.840.1.113883.4.1"/>
-			<addr use="HP1">
+			<addr use="HP">
 				<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 				<streetAddressLine>1111 Home Street</streetAddressLine>
 				<city>Beaverton</city>
@@ -31,7 +31,7 @@
 				<country>US</country>
 				<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
 			</addr>
-                        <addr use="HP1">
+                        <addr use="HP">
                 <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
                 <streetAddressLine>2222 Home Street</streetAddressLine>
                 <city>Beaverton</city>
@@ -42,7 +42,7 @@
             </addr>
             
             
-                        <addr use="HP1">
+                        <addr use="HP">
                 <!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
                 <streetAddressLine>333 Home Street</streetAddressLine>
                 <city>Beaverton</city>
