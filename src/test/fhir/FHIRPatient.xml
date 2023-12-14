@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><Bundle>
+    <type value="transaction"/>
+    <entry>
+        <resource>
+            <Patient>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+                    <valueCodeableConcept>
+                        <coding>
+                            <code value="1013"/>
+                            <display value="Christian (non-Catholic, non-specific)"/>
+                            <system value="urn:oid:2.16.840.1.113883.5.1076"/>
+                        </coding>
+                        <text value="Christian (non-Catholic, non-specific)"/>
+                    </valueCodeableConcept>
+                </extension>
+                <extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2106-3"/>
+                            <display value="White"/>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString/>
+                    </extension>
+                </extension>
+                <extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2186-5"/>
+                            <display value="Not Hispanic or Latino"/>
+                            <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+                    <valueAddress>
+                        <city value="Beaverton"/>
+                        <country value="US"/>
+                        <line value="4444 Home Street"/>
+                        <postalCode value="97867"/>
+                        <state value="OR"/>
+                    </valueAddress>
+                </extension>
+                <identifier>
+                    <system value="urn:oid:2.16.840.1.113883.4.1"/>
+                    <value value="444222222"/>
+                </identifier>
+                <identifier>
+                    <system value="urn:oid:2.16.840.1.113883.4.1"/>
+                    <value value="555222222"/>
+                </identifier>
+                <identifier>
+                    <system value="urn:oid:2.16.840.1.113883.4.1"/>
+                    <value value="666222222"/>
+                </identifier>
+                <meta/>
+                <name>
+                    <family value="Betterhalf1"/>
+                    <given value="Eve"/>
+                    <period>
+                        <end value="2010-05-10"/>
+                        <start value="2000-05-05"/>
+                    </period>
+                    <use value="official"/>
+                </name>
+                <name>
+                    <family value="Betterhalf2"/>
+                    <given value="Eve"/>
+                    <use value="official"/>
+                </name>
+                <name>
+                    <family value="Betterhalf3"/>
+                    <given value="Eve"/>
+                    <use value="official"/>
+                </name>
+                <name>
+                    <family value="Betterhalf"/>
+                    <given value="Eve"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-1111"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-2222"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-3333"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-4444"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-5555"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <use value="mobile"/>
+                    <value value="+1(555)555-6666"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-7777"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-8888"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <use value="home"/>
+                    <value value="+1(555)555-9999"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1975-05-01"/>
+                <address>
+                    <city value="Beaverton"/>
+                    <country value="US"/>
+                    <line value="1111 Home Street"/>
+                    <period>
+                        <end value="2011-01-30"/>
+                        <start value="2007-05-13"/>
+                    </period>
+                    <postalCode value="97867"/>
+                    <state value="OR"/>
+                    <use value="home"/>
+                </address>
+                <address>
+                    <city value="Beaverton"/>
+                    <country value="US"/>
+                    <line value="2222 Home Street"/>
+                    <postalCode value="97867"/>
+                    <state value="OR"/>
+                    <use value="home"/>
+                </address>
+                <address>
+                    <city value="Beaverton"/>
+                    <country value="US"/>
+                    <line value="333 Home Street"/>
+                    <postalCode value="97867"/>
+                    <state value="OR"/>
+                    <use value="home"/>
+                </address>
+                <maritalStatus>
+                    <coding>
+                        <code value="M"/>
+                        <display value="Married"/>
+                        <system value="urn:oid:2.16.840.1.113883.5.2"/>
+                    </coding>
+                    <text value="Married"/>
+                </maritalStatus>
+                <communication>
+                    <language>
+                        <coding>
+                            <display value="en"/>
+                        </coding>
+                    </language>
+                    <preferred value="true"/>
+                </communication>
+                <communication>
+                    <language>
+                        <coding>
+                            <display value="en"/>
+                        </coding>
+                    </language>
+                    <preferred value="true"/>
+                </communication>
+                <communication>
+                    <language>
+                        <coding>
+                            <display value="en"/>
+                        </coding>
+                    </language>
+                    <preferred value="true"/>
+                </communication>
+                <communication>
+                    <language>
+                        <coding>
+                            <code value="en"/>
+                            <system value="urn:oid:2.16.840.1.113883.5.60"/>
+                        </coding>
+                    </language>
+                    <preferred value="true"/>
+                </communication>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <RelatedPerson>
+                <meta/>
+                <patient>
+                    <display value="Patient/2.16.840.1.113883.4.1::444222222"/>
+                </patient>
+                <relationship>
+                    <coding>
+                        <code value="GRD"/>
+                        <display value="Guardian"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0063"/>
+                    </coding>
+                    <text value="Guardian"/>
+                </relationship>
+                <name>
+                    <family value="Betterhalf"/>
+                    <given value="Boris"/>
+                    <given value="Bo"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <use value="mobile"/>
+                    <value value="+1(555)555-2008"/>
+                </telecom>
+                <address>
+                    <city value="Beaverton"/>
+                    <country value="US"/>
+                    <line value="2222 Home Street"/>
+                    <postalCode value="97867"/>
+                    <state value="OR"/>
+                    <use value="home"/>
+                </address>
+            </RelatedPerson>
+        </resource>
+    </entry>
+</Bundle>

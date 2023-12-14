@@ -19,6 +19,8 @@
 	<recordTarget>
 		<patientRole>
 			<id extension="444222222" root="2.16.840.1.113883.4.1" />
+			<id extension="555222222" root="2.16.840.1.113883.4.1" />
+			<id extension="666222222" root="2.16.840.1.113883.4.1" />
 			<addr use="HP">
 				<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 				<streetAddressLine>1111 Home Street</streetAddressLine>
@@ -26,6 +28,12 @@
 				<state>OR</state>
 				<postalCode>97867</postalCode>
 				<country>US</country>
+				<useablePeriod
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:type="IVL_TS">
+					<low value="20070513" />
+					<high value="20110130" />
+				</useablePeriod>
 				<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
 			</addr>
 			<addr use="HP">
@@ -49,11 +57,15 @@
 				<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
 			</addr>
 
-			<telecom value="tel:+1(555)555-1111" use="HP" />
-			<telecom value="tel:+1(555)555-2222" use="WP" />
-			<telecom value="tel:+1(555)555-3333" use="SMS" />
-			<telecom value="tel:+1(555)555-4444" use="FAX" />
-
+			<telecom value="tel:+1(555)555-1111" use="AS" />
+			<telecom value="tel:+1(555)555-2222" use="BAD" />
+			<telecom value="mailto:+1(555)555-3333" use="DIR" />
+			<telecom value="fax:+1(555)555-4444" use="H" />
+			<telecom value="fax:+1(555)555-5555" use="HV" />
+			<telecom value="fax:+1(555)555-6666" use="MC" />
+			<telecom value="fax:+1(555)555-7777" use="PG" />
+			<telecom value="fax:+1(555)555-8888" use="PUB" />
+			<telecom value="fax:+1(555)555-9999" use="TMP" />
 			<patient>
 				<name use="L">
 					<given>Eve</given>
@@ -102,7 +114,8 @@
 					codeSystemName="Race &amp; Ethnicity - CDC" />
 				<!-- The raceCode extension is only used if raceCode is valued -->
 				<sdtc:raceCode code="2076-8"
-					displayName="Hawaiian or Other Pacific Islander"
+					displayName="Hawaiian or Other P
+					acific Islander"
 					codeSystem="2.16.840.1.113883.6.238"
 					codeSystemName="Race &amp; Ethnicity - CDC" />
 				<ethnicGroupCode code="2186-5"
@@ -177,7 +190,8 @@
 					<preferenceInd value="true" />
 				</languageCommunication>
 				<languageCommunication>
-					<languageCode code="en" />
+					<languageCode code="en"
+						codeSystem="2.16.840.1.113883.5.60" />
 					<!-- "en" is ISO 639-1 alpha-2 code for "English" -->
 					<modeCode code="ESP" displayName="Expressed spoken"
 						codeSystem="2.16.840.1.113883.5.60"
