@@ -4,7 +4,12 @@ preprocessors:
        name: CDAPreProcesor
        class: org.mdmi.processors.cda.CDAPreProcesor
        groups:
-         - CDAR2         
+         - CDAR2
+    v2:
+       name: CDAPreProcesor
+       class: org.mdmi.processors.cda.CDAPreProcesor
+       groups:
+         - HL7V2         
 sourcesemanticprocessors:
     sourcelog:
         name: SourceLogSemantic

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle>
+	<type value="transaction" />
+	<entry>
+		<resource>
+			<AllergyIntolerance xmlns="http://hl7.org/fhir">
+				<id value="example" />
+				 <identifier>
+                    <system value="urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2"/>
+                    <value value="545077400001"/>
+                </identifier>
+                <identifier>
+                    <system value="urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2"/>
+                    <value value="545077400003"/>
+                </identifier>
+				<clinicalStatus>
+					<coding>
+						<system
+							value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
+						<code value="active" />
+					</coding>
+				</clinicalStatus>
+				<verificationStatus>
+					<coding>
+						<system
+							value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+						<code value="confirmed" />
+					</coding>
+				</verificationStatus>
+				<type value="intolerance"/>
+				<category value="medication" />
+				<criticality value="high" />
+				<onsetDateTime value="2008-05-01"/>
+				<recordedDate value="2008-10-10"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct" />
+						<version value="http://snomed.info/sct/731000124108" />
+						<code value="763875007" />
+						<display value="Product containing sulfonamide (product)" />
+					</coding>
+					<text value="sulfonamide antibacterial" />
+				</code>
+				<patient>
+					<reference value="Patient/example" />
+					<display value="Amy V. Shaw" />
+				</patient>
+				<recorder>
+					<reference value="Practitioner/prac" />
+					<display value="XYZ Test" />
+				</recorder>
+				<reaction>
+					<manifestation>
+						<coding>
+							<system value="http://snomed.info/sct" />
+							<version value="http://snomed.info/sct/731000124108" />
+							<code value="271807003" />
+							<display value="skin rash" />
+						</coding>
+						<text value="skin rash" />
+					</manifestation>
+					<onset value="2008-05-01"/>
+					<severity value="mild" />
+				</reaction>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+</Bundle>
