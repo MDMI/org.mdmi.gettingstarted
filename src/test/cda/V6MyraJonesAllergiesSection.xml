@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+    xmlns:sdtc="urn:hl7-org:sdtc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.2" />
+    <id root="973c7e16-05dd-484f-a780-e80904fd8ff0" />
+    <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" />
+    <title>Continuity of Care Document</title>
+    <effectiveTime value="20161003182710+0000" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.6" extension="2015-08-01" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.6" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" />
+                    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" />
+                    <title>Allergies and Adverse Reactions</title>
+                    <!-- Human-readable: not updated                     -->
+                    <text>
+                        <table>
+                            <colgroup>
+                                <col width="40%" />
+                                <col width="20%" />
+                                <col width="40%" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="_6db75b62-deb2-4bab-b597-00c8ae86f6b4">Aspirin TABS</content>
+                                        <content styleCode="xSecondary"> (propensity to adverse reactions to drug)</content>
+                                    </td>
+                                    <td>
+                                        <content styleCode="xSecondary">Onset: 1-May-2008</content>
+                                    </td>
+                                    <td>
+                                        <content>
+                                            <content styleCode="xLabel xSecondary">Reaction</content>:
+                                            <content ID="_8a7ed342-967a-400e-88d5-2f8c2b7cdda0" styleCode="xAlert">Hives</content>
+                                            <content styleCode="xAlert"> (Severe)</content>
+                                        </content>
+                                    </td>
+                                    <td>
+                                        <content styleCode="xSecondary">Criticality: high criticality</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30" />
+                            <id root="1.3.6.1.4.1.22812.3.2009316.3.4.10" extension="545077400001" />
+                            <id root="1.3.6.1.4.1.22812.3.2009316.3.4.10" extension="545077400003" />
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+                            <statusCode code="active" />
+                            <effectiveTime>
+                                <low value="20080501" />
+                            </effectiveTime>
+                            <author>
+                                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                <time value="20140104"/>
+                                <assignedAuthor>
+                                    <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                                    <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
+                                    <telecom use="WP" value="tel:555-555-1002"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given>Henry</given>
+                                            <family>Seven</family>
+                                        </name>
+                                    </assignedPerson>
+                                    <representedOrganization>
+                                        <id root="2.16.840.1.113883.19.5.9999.1394"/>
+                                        <name>Good Health Clinic</name>
+                                        <telecom use="WP" value="tel:555-555-1002"/>
+                                        <addr>
+                                            <streetAddressLine>1021 Health Drive</streetAddressLine>
+                                            <city>Ann Arbor</city>
+                                            <state>MI</state>
+                                            <postalCode>99099</postalCode>
+                                            <country>US</country>
+                                        </addr>
+                                    </representedOrganization>
+                                </assignedAuthor>
+                            </author>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09" />
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+                                    <id root="1.3.6.1.4.1.22812.3.2009316.3.4.10.2" extension="545077400001" />
+                                    <id root="1.3.6.1.4.1.22812.3.2009316.3.4.10.2" extension="545077400003" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime>
+                                        <low value="20080501" />
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="419511003" codeSystem="2.16.840.1.113883.6.96">
+                                        <originalText>
+                                            <reference value="#_6db75b62-deb2-4bab-b597-00c8ae86f6b4" />
+                                        </originalText>
+                                    </value>
+                                    <participant typeCode="CSM">
+                                        <participantRole classCode="MANU">
+                                            <playingEntity classCode="MMAT">
+                                                <code code="1191" codeSystem="2.16.840.1.113883.6.88">
+                                                    <translation code="293586001" codeSystem="2.16.840.1.113883.6.96" />
+                                                </code>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship typeCode="MFST" inversionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09" />
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.9" />
+                                            <id root="d89ce431-e0f1-4f8d-a81f-489b6ed91f09"/>
+                                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                            <text>
+                                                <reference value="#_8a7ed342-967a-400e-88d5-2f8c2b7cdda0" />
+                                            </text>
+                                            <statusCode code="completed" />
+                                            <effectiveTime>
+                                                <low value="20080501"/>
+                                                <high value="20080501"/>
+                                            </effectiveTime>
+                                            <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheal">
+                                                <originalText>
+                                                    <reference value="#_8a7ed342-967a-400e-88d5-2f8c2b7cdda0" />
+                                                </originalText>
+                                            </value>
+                                            <entryRelationship typeCode="RSON" inversionInd="true">
+                                                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                                <!-- ** Medication Activity (V2) ** -->
+                                                <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+                                                <templateId root="2.16.840.1.113883.10.20.22.4.16"/>                                                        
+                                                <id root="54cdc18a-9ddb-11ee-8c90-0242ac120002"/>
+                                                <statusCode code="active"/>
+                                                <effectiveTime value="20080501"/>
+                                                <doseQuantity value="1"/>
+                                                <consumable>
+                                                    <manufacturedProduct classCode="MANU">
+                                                    <!-- ** Medication information ** -->
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.23" 
+                                                            extension="2014-06-09"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+
+                                                    <id root="7f92b43e-9ddb-11ee-8c90-0242ac120002"/>
+                                                    <manufacturedMaterial>
+                                                        <code code="1049901"  
+                                                            displayName="Benadryl 12.5 mg chewable tablet" 
+                                                            codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                                                    </manufacturedMaterial>
+                                                    </manufacturedProduct>
+                                                </consumable>
+                                                </substanceAdministration>
+                                            </entryRelationship>
+                                            <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.8" extension="2014-06-09" />
+                                                    <templateId root="2.16.840.1.113883.10.20.22.4.8" />
+                                                    <code code="SEV" codeSystem="2.16.840.1.113883.5.4" />
+                                                    <text>Severe</text>
+                                                    <statusCode code="completed" />
+                                                    <value xsi:type="CD" code="24484000" codeSystem="2.16.840.1.113883.6.96" />
+                                                </observation>
+                                            </entryRelationship>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.145"/>
+                                    <code code="82606-5" codeSystem="2.16.840.1.113883.6.1" displayName="Criticality" />
+                                    <text>
+                                        <reference value="#criticality"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <value xsi:type="CD" code="CRITH" displayName="high criticality" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="ObservationValue" />
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- ** Allergy problem act ** -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+                            <id root="91a4e6a1-e192-438c-a85d-abb210af6d25"/>
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                            <text>Concern</text>
+                            <statusCode code="active"/>
+                            <!-- This is the time stamp for when the non-allergy was first documented as a concern-->
+                            <effectiveTime>
+                                <low value="20140104123506-0500"/>
+                            </effectiveTime>
+                            <author>
+                                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                <time value="20140104"/>
+                                <assignedAuthor>
+                                    <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                                    <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
+                                    <telecom use="WP" value="tel:555-555-1002"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given>Henry</given>
+                                            <family>SevenJrAct</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                            <entryRelationship typeCode="SUBJ">
+                                <!-- negationInd is used here as valueNegationInd - the substance allergy-->
+                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                                    <!-- allergy observation template -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+                                    <id root="55ac1612-2d3f-4084-b687-0997446cabad"/>
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                                    <text>ASSERTION</text>
+                                    <statusCode code="completed"/>
+                                    <!-- This is the time stamp for when patient believes they were tested. -->
+                                    <!-- Just the year is shown since a specific month and date was not reported -->
+                                    <effectiveTime>
+                                        <low value="2006"/>
+                                    </effectiveTime>
+                                    <!-- This specifies that the allergy is to a substance -->
+                                    <!-- Considered 'Allergy to peanuts' above but decided to use substance since this is what systems will expect -->
+                                    <value xsi:type="CD" code="414285001" displayName="Allergy to food" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                    <author>
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                        <time value="20140104"/>
+                                        <assignedAuthor>
+                                            <id extension="99999999214" root="2.16.840.1.113883.4.6"/>
+                                            <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
+                                            <telecom use="WP" value="tel:555-555-1002"/>
+                                            <assignedPerson>
+                                                <name>
+                                                    <given>Henry</given>
+                                                    <family>SevenJrObs</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                    <participant typeCode="CSM">
+                                        <participantRole classCode="MANU">
+                                            <playingEntity classCode="MMAT">
+                                                <!-- SNOMED is used to report specific susbtance -->
+                                                <!-- Considered 'Allergy to peanuts' above but decided to use substance since this is what systems will expect -->
+                                                <code code="762952008" displayName="Peanut" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- ** Allergy problem act ** -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+                            <id root="91a4e6a1-e192-438c-a85d-abb210af6d25"/>
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                            <text>Concern</text>
+                            <statusCode code="active"/>
+                            <effectiveTime>
+                                <low value="20030101"/>
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- allergy observation template -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+                                    <id root="55ac1612-2d3f-4084-b687-0997446cabad"/>
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                                    <text>ASSERTION</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="2003"/>
+                                        <high value="2006"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="414285001" displayName="Allergy to food" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                    <participant typeCode="CSM">
+                                        <participantRole classCode="MANU">
+                                            <playingEntity classCode="MMAT">
+                                                <code code="762952008" displayName="Peanut" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.28" extension="2019-06-20"/>
+                                            <id root="d3f1845a-9062-11ee-b9d1-0242ac120002"/>
+                                            <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                                            <text>STATUS</text>
+                                            <statusCode code="completed"/>
+                                            <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

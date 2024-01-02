@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+    xmlns:sdtc="urn:hl7-org:sdtc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.2" />
+    <id root="973c7e16-05dd-484f-a780-e80904fd8ff0" />
+    <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" />
+    <title>Continuity of Care Document</title>
+    <effectiveTime value="20161003182710+0000" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.7" extension="2014-06-09" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.7" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09" ></templateId>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.7.1" />
+                    <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" />
+                    <title>Procedures</title>
+                    <!-- Human-readable: not updated                     -->
+                    <text>
+                        <table>
+                            <colgroup>
+                                <col width="40%" />
+                                <col width="20%" />
+                                <col width="40%" />
+                            </colgroup>
+                            <tbody styleCode="xRowGroup">
+                                <tr>
+                                    <td>
+                                        <content ID="_dfcf353c-538f-498a-9a53-80dda209e456">H/O chest x-ray</content>
+                                    </td>
+                                    <td/>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="_dfcf353c-538f-498a-9a53-80dda209e457">Exercise stress test</content>
+                                    </td>
+                                    <td/>
+                                    <td/>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry>
+                        <procedure classCode="PROC" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                            <id root="1.3.6.1.4.1.22812.3.2009316.3.4.7" extension="545069400001" />
+                            <id root="1.3.6.1.4.1.22812.3.2009316.3.4.7" extension="545069400003" />
+                            <code code="416940007" codeSystem="2.16.840.1.113883.6.96" displayName="H/O chest x-ray">
+                                <originalText>
+                                    <reference value="#_dfcf353c-538f-498a-9a53-80dda209e456" />
+                                </originalText>
+                                <translation code="V15.89" codeSystem="2.16.840.1.113883.6.103" />
+                                <translation code="Z92.89" codeSystem="2.16.840.1.113883.6.90" />
+                                <translation code="2782946" codeSystem="2.16.840.1.113883.3.247.1.1" />
+                            </code>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="20120816"/>
+                            <priorityCode code="A" codeSystem="2.16.840.1.113883.5.7" displayName="ASAP" codeSystemName="ActPriority"/>
+                            <!-- methodCode indicates how the procedure was performed. It cannot conflict with the code used for procedure-->
+                            <methodCode code="363680008" codeSystem="2.16.840.1.113883.6.96" displayName="Radiographic imaging procedure" codeSystemName="SNOMED-CT"/>
+                            <!-- targetSiteCode indicates the body site addressed by procedure and must be from value set 2.16.840.1.113883.3.88.12.3221.8.9-->
+                            <targetSiteCode code="416550000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Chest and/or abdomen structure" />
+                            <performer>
+                                <assignedEntity>
+                                    <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824"/>
+                                    <addr>
+                                        <streetAddressLine>1021 Health Drive</streetAddressLine>
+                                        <city>Ann Arbor</city>
+                                        <state>MI</state>
+                                        <postalCode>99099</postalCode>
+                                        <country>US</country>
+                                    </addr>
+                                    <telecom use="WP" value="tel:+1(555)555-1002"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given>Amanda</given>
+                                            <family>Assigned</family>
+                                        </name>
+                                    </assignedPerson>
+                                    <representedOrganization>
+                                        <id root="2.16.840.1.113883.19.5.9999.1394"/>
+                                        <name>Good Health Clinic</name>
+                                        <telecom use="WP" value="tel:555-555-1002"/>
+                                        <addr>
+                                            <streetAddressLine>1021 Health Drive</streetAddressLine>
+                                            <city>Ann Arbor</city>
+                                            <state>MI</state>
+                                            <postalCode>99099</postalCode>
+                                            <country>US</country>
+                                        </addr>
+                                    </representedOrganization>
+                                </assignedEntity>
+                            </performer>
+                            <author>
+                                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                <time value="20120806"/>
+                                <assignedAuthor>
+                                    <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                                    <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                                    <telecom use="WP" value="tel:555-555-1002"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given>Amandaa</given>
+                                            <family>Assigned</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
+                                    <code code="1160-1" codeSystem="2.16.840.1.113883.6.259" codeSystemName="HealthcareServiceLocation" displayName="Urgent Care Center"/>
+                                    <addr>
+                                        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+                                        <city>Blue Bell</city>
+                                        <state>MA</state>
+                                        <postalCode>02368</postalCode>
+                                        <country>US</country>
+                                    </addr>
+                                    <telecom use="WP" value="tel:+1(555)555-5000"/>
+                                    <playingEntity classCode="PLC">
+                                        <name>Community Health and Hospitals</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                            <entryRelationship typeCode="COMP" inversionInd="true">
+                                <encounter classCode="ENC" moodCode="EVN">
+                                    <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                                </encounter>
+                            </entryRelationship>
+                            <!-- Indication -->
+                            <entryRelationship typeCode="RSON">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
+                                    <id extension="86579" root="1.2.840.114350.1.13.861.1.7.2.696871"/>
+                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problem"/>
+                                    <text>Wheezing</text>
+                                    <statusCode code="completed"/>
+                                    <value code="56018004" displayName="Wheezing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"
+                                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    </value>
+                                </observation>
+                            </entryRelationship>
+                        </procedure>
+                    </entry>
+                    <entry>
+                        <procedure classCode="PROC" moodCode="EVN">
+                            <!-- Procedure Activity Procedure  -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2022-06-01" />
+                            <id root="d5b614bd-01ce-410d-8726-e1fd01dcc72a" />
+                            <code code="73761001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Colonoscopy">
+                            </code>
+                            <statusCode code="completed" />
+                            <effectiveTime value="20030512" />
+                            <targetSiteCode code="71854001" displayName="Colon structure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <specimen typeCode="SPC">
+                                <specimenRole classCode="SPEC">
+                                    <id root="a6d7b927-2b70-43c7-bdf3-0e7c4133062c" />
+                                    <specimenPlayingEntity>
+                                        <code code="55572008" codeSystem="2.16.840.1.113883.6.96" displayName="Left colon structure" />
+                                    </specimenPlayingEntity>
+                                </specimenRole>
+                            </specimen>
+                            <participant typeCode="DEV">
+                                <participantRole classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                                    <id root="2.16.840.1.113883.3.3719" extension="(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234" assigningAuthorityName="FDA"/>
+                                    <playingDevice>
+                                        <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
+                                    </playingDevice>
+                                    <scopingEntity>
+                                        <id root="2.16.840.1.113883.3.3719"/>
+                                    </scopingEntity>
+                                </participantRole>
+                            </participant>
+                        </procedure>
+                    </entry>
+                    <entry>
+                        <procedure classCode="PROC" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                            <id root="1.3.6.1.4.1.22812.3.2009316.3.4.7" extension="545069400001" />
+                            <id root="1.3.6.1.4.1.22812.3.2009316.3.4.7" extension="545069400003" />
+                            <code code="252195001" codeSystem="2.16.840.1.113883.6.96" displayName="Exercise stress test">
+                                <originalText>
+                                    <reference value="#_dfcf353c-538f-498a-9a53-80dda209e457" />
+                                </originalText>
+                            </code>
+                            <statusCode code="completed" />
+                            <effectiveTime value="20120806"/>
+                            <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                <act classCode="ACT" moodCode="INT">
+                                    <!-- Instruction (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                                    <code code="304507003" codeSystem="2.16.840.1.113883.6.96" displayName="Exercise education" />
+                                    <text>Take breaks as needed</text>
+                                    <statusCode code="completed"/>
+                                </act>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                    <!-- ** Medication Activity (V2) ** -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                                    <id root="6c844c75-aa34-411c-b7bd-5e4a9f206e29"/>
+                                    <statusCode code="active"/>
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="20120806"/>
+                                    </effectiveTime>
+                                    <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                                        <period value="12" unit="h"/>
+                                    </effectiveTime>
+                                    <routeCode code="C38216" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="inhalation"/>
+                                    <doseQuantity value="1"/>
+                                    <consumable>
+                                        <manufacturedProduct classCode="MANU">
+                                            <!-- ** Medication information ** -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+                                            <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
+                                            <manufacturedMaterial>
+                                                <code code="1649560" displayName="albuterol 0.09 mg/actuat inhaler" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </consumable>
+                                </substanceAdministration>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09" />
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.9" />
+                                    <id root="d89ce431-e0f1-4f8d-a81f-489b6ed91f09"/>
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime>
+                                        <low value="20120806"/>
+                                        <high value="20120806"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="Wheezing">
+                                    </value>
+                                </observation>
+                            </entryRelationship>
+                        </procedure>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- Procedures should be used for care that directly changes the patient's physical state.-->
+                        <procedure moodCode="EVN" classCode="PROC">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+                            <id root="64af26d5-88ef-4169-ba16-c6ef16a1824f"/>
+                            <code code="385767005" displayName="Meals on wheels provision education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                            </code>
+                            <statusCode code="completed"/>
+                            <!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
+                            <effectiveTime>
+                                <low value="20100909"/>
+                                <high value="20101231"/>
+                            </effectiveTime>
+                            <entryRelationship typeCode="RSON">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+                                    <id root="3700b3b0-fbed-11e2-b778-0800200c9a66" />
+                                    <!-- The code is nulled to "NP" Not Present" -->
+                                    <code nullFlavor="NP" />
+                                    <statusCode code="completed" />
+                                </act>
+                            </entryRelationship>
+                        </procedure>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

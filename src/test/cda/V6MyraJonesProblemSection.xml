@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+    xmlns:sdtc="urn:hl7-org:sdtc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.2" />
+    <id root="973c7e16-05dd-484f-a780-e80904fd8ff0" />
+    <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" />
+    <title>Continuity of Care Document</title>
+    <effectiveTime value="20161003182710+0000" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5" extension="2015-08-01" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01" />
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" />
+                    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" />
+                    <title>Problems</title>
+                    <!-- Human-readable: not updated                     -->
+                    <text>
+                        <table>
+                            <colgroup>
+                                <col width="40%" />
+                                <col width="20%" />
+                                <col width="40%" />
+                            </colgroup>
+                            <tbody styleCode="xRowGroup">
+                                <tr>
+                                    <td>
+                                        <content ID="_5011447a-e27f-471d-9e1f-541148c5282f">Pneumonia</content>
+                                        <content styleCode="xSecondary">(486) (J18.9)</content>
+                                        <br />
+                                    </td>
+                                    <td>
+                                        <content styleCode="xLabel xSecondary">Onset: </content>
+                                        <content>6-Aug-2012</content>
+                                        <br />
+                                    </td>
+                                    <td/>
+                                </tr>
+                            </tbody>
+                            <tbody styleCode="xRowGroup">
+                                <tr>
+                                    <td>
+                                        <content ID="_4f1a62c2-9353-455a-bf3a-40f46a6115f4">Asthma</content>
+                                        <content styleCode="xSecondary">(493.90) (J45.909)</content>
+                                        <br />
+                                    </td>
+                                    <td/>
+                                    <td/>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id extension="545069300001" root="1.3.6.1.4.1.22812.3.2009316.3.4.1" />
+                            <id extension="545069300001" root="1.3.6.1.4.1.22812.3.2009316.3.4.1" />
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+                            <statusCode code="active" />
+                            <effectiveTime >
+                                <low value="20120806" />
+                            </effectiveTime>
+                            <author>
+                                <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                <time value="20140104"/>
+                                <assignedAuthor>
+                                    <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                                    <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" />
+                                    <telecom use="WP" value="tel:555-555-1002"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given>Henri</given>
+                                            <family>SevenAct</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <id extension="545069300001" root="1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1" />
+                                    <id extension="545069300001" root="1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1" />
+                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96">
+                                        <translation nullFlavor="NI" />
+                                    </code>
+                                    <text>
+                                        <reference value="#_5011447a-e27f-471d-9e1f-541148c5282f" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime >
+                                        <low value="20120806" />
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="233604007" codeSystem="2.16.840.1.113883.6.96" displayName="Pneumonia">
+                                        <originalText>
+                                            <reference value="#_5011447a-e27f-471d-9e1f-541148c5282f" />
+                                        </originalText>
+                                        <translation code="486" codeSystem="2.16.840.1.113883.6.103" />
+                                        <translation code="J18.9" codeSystem="2.16.840.1.113883.6.90" />
+                                        <translation code="87580" codeSystem="2.16.840.1.113883.3.247.1.1" />
+                                    </value>
+                                    <author>
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                        <time value="20100815"/>
+                                        <assignedAuthor>
+                                            <id extension="99999999" root="2.16.840.1.113883.4.6"/>
+                                            <code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Health Care Provider Taxonomy" displayName="Family Medicine" />
+                                            <telecom use="WP" value="tel:555-555-1002"/>
+                                            <assignedPerson>
+                                                <name>
+                                                    <given>Henry</given>
+                                                    <family>SevenObs</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                    <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.31" />
+                                            <!-- Age observation -->
+                                            <code code="445518008" codeSystem="2.16.840.1.113883.6.96" displayName="Age At Onset" />
+                                            <statusCode code="completed" />
+                                            <value xsi:type="PQ" value="65" unit="a" />
+                                        </observation>
+                                    </entryRelationship >
+                                    <entryRelationship typeCode="REFR">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <!-- Prognosis -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.113" />
+                                            <id root="2097c709-291b-4a0f-bef9-ad9b23b3bb43" />
+                                            <code code="75328-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prognosis" />
+                                            <statusCode code="completed" />
+                                            <effectiveTime>
+                                                <low value="20120901" />
+                                            </effectiveTime>
+                                            <value xsi:type="CD" code="67334001" codeSystem="2.16.840.1.113883.6.96" displayName="Guarded prognosis" codeSystemName="SNOMED CT" />
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="REFR">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.143" />
+                                            <id root="7d66f448-ba82-4291-a9da-9e5db5e58803" />
+                                            <code code="225773000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="preference" />
+                                            <value xsi:type="CD" code="394849002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="High priority" />
+                                            <!--
+                                                Author Participation Template
+                                                In this case, the author is the same as a participant already described in the header. 
+                                                However, the author could be a the record target (patient), a different provider - 
+                                                someone else in the header, or a new provider not elsewhere specified.
+                                                -->
+                                            <author>
+                                                <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+                                                <time value="20130801" />
+                                                <assignedAuthor>
+                                                    <!-- This id points back to a participant in the header -->
+                                                    <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+                                                </assignedAuthor>
+                                            </author>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.143" />
+                                    <id root="7d66f448-ba82-4291-a9da-9e5db5e58803" />
+                                    <code code="225773000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="preference" />
+                                    <value xsi:type="CD" code="394849002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="High priority" />
+                                    <!--
+                                        Author Participation Template
+                                        In this case, the author is the same as a participant already described in the header. 
+                                        However, the author could be a the record target (patient), a different provider - 
+                                        someone else in the header, or a new provider not elsewhere specified.
+                                        -->
+                                    <author>
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+                                        <time value="20130801" />
+                                        <assignedAuthor>
+                                            <!-- This id points back to a participant in the header -->
+                                            <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" />
+                                        </assignedAuthor>
+                                    </author>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id extension="545077400017" root="1.3.6.1.4.1.22812.3.2009316.3.4.1" />
+                            <id extension="545077400019" root="1.3.6.1.4.1.22812.3.2009316.3.4.1" />
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+                            <statusCode code="active" />
+                            <effectiveTime >
+                                <low value="20100815" />
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <id extension="545077400017" root="1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1" />
+                                    <id extension="545077400019" root="1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1" />
+                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96">
+                                        <translation nullFlavor="NI" />
+                                    </code>
+                                    <text>
+                                        <reference value="#_4f1a62c2-9353-455a-bf3a-40f46a6115f4" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime >
+                                        <low value="20100815" />
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96">
+                                        <originalText>
+                                            <reference value="#_4f1a62c2-9353-455a-bf3a-40f46a6115f4" />
+                                        </originalText>
+                                        <translation code="493.90" codeSystem="2.16.840.1.113883.6.103" />
+                                        <translation code="J45.909" codeSystem="2.16.840.1.113883.6.90" />
+                                        <translation code="94262" codeSystem="2.16.840.1.113883.3.247.1.1" />
+                                    </value>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id extension="45" root="1.3.6.1.4.1.22812.3.99930.3.4.1.3"/>
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+                            <statusCode code="active" />
+                            <effectiveTime >
+                                <low value="20120815" />
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01" />
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <id extension="44" root="1.3.6.1.4.1.22812.3.99930.3.4.1.3"/>
+                                    <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <effectiveTime>
+                                        <low value="20120815" />
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="56018004" codeSystem="2.16.840.1.113883.6.96" displayName="wheezing" />
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+                            <id root="e5fbc288-659f-4aeb-a5e1-eb7cc8fcdfaf" />
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+                            <!-- Since this is a resolved problem, the concern status has been changed to completed. -->
+                            <!-- While clinicians can track resolved problems, generally active problems will have active concern status and resolved concerns will be completed -->
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <!-- This represents the time that the clinician began tracking the concern. This may frequently be an EHR timestamp-->
+                                <low value="20140403124536-0500" />
+                                <!-- This represents the time that the clinician stopped actively the concern. This may frequently be an EHR timestamp-->
+                                <high value="20140407102516-0500" />
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                                    <id extension="10241108" root="1.3.6.1.4.1.22812.4.111.0.4.1.2.1" />
+                                    <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+                                    </code>
+                                    <text>
+                                        <reference value="#Problem1" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime>
+                                        <!-- This represents the date of biological onset. This can be before the patient vistited the clinician, as illustrated in this example-->
+                                        <low value="20140402" />
+                                        <!-- This represents the date of resolution. Since this a boundary condition, if you wish to include the full day, the boundary should be padded or be the start of next day -->
+                                        <!-- This reflects a common confusion point since people often consider dates to include the day at the boundary, but this ia RIM-related boundary constraint-->
+                                        <high value="20140405235959-0500"/>
+                                    </effectiveTime>
+                                    <!-- This is a SNOMED code as the primary vocabulary for problem lists-->
+                                    <value xsi:type="CD" code="363746003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Acute pharyngitis">
+                                        <originalText>
+                                            <reference value="#ProblemDescription1" />
+                                        </originalText>
+                                        <!-- These are common translations of the SNOMED code, ICd-9 and ICd-10 are often used in billing-->
+                                        <translation xsi:type="CD" code="462" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9" displayName="Acute pharyngitis" />
+                                        <translation xsi:type="CD" code="J02.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10" displayName="Acute pharyngitis" />
+                                    </value>
+                                    <author>
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+                                        <time value="20140407"/>
+                                        <assignedAuthor>
+                                            <id extension="66666" root="2.16.840.1.113883.4.6"/>
+                                            <code code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease"/>
+                                            <addr>
+                                                <streetAddressLine>6666 StreetName St.</streetAddressLine>
+                                                <city>Silver Spring</city>
+                                                <state>MD</state>
+                                                <postalCode>20901</postalCode>
+                                                <country>US</country>
+                                            </addr>
+                                            <telecom value="tel:+1(301)666-6666" use="WP"/>
+                                            <assignedPerson>
+                                                <name>
+                                                    <given>Heartly</given>
+                                                    <family>Sixer</family>
+                                                    <suffix>MD</suffix>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry >
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id root="b46f0fc0-986f-11ee-b9d1-0242ac120002"/>
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                            <text>Concern</text>
+                            <statusCode code="active"/>
+                            <effectiveTime>
+                                <low value="20130101"/>
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <!-- SDOH Problem -->
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
+                                    <id extension="68993" root="1.2.840.114350.1.13.6289.1.7.2.768076"/>
+                                    <id root="093A5380-00CE-11E6-B4C5-0050568B000B" extension="1.1"/>
+                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problem">
+                                        <originalText>Problem                                </originalText>
+                                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+                                    </code>
+                                    <text>problem                            </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="20100909"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="445281000124101" displayName="Nutrition impaired due to limited access to healthful foods (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                        <translation code="Z59.48" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10-CM" displayName="Other specified lack of adequate food"/>
+                                    </value>
+                                    <entryRelationship typeCode="SPRT">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+                                            <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+                                            <code code="88122-7" displayName="(I/We) worried whether (my/our) food would run out before (I/we) got money to buy more" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime value="20100909"/>
+                                            <value xsi:type="CD" code="LA28397-0" displayName="Often true" codeSystem="2.16.840.1.113883.6.1">
+                                                <translation code="1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            </value>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="SPRT">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+                                            <id root="1798df5c-9def-11ee-8c90-0242ac120002"/>
+                                            <code code="88123-5" displayName="Within the past 12Mo the food we bought just didn't last and we didn't have money to get more" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime value="20100909"/>
+                                            <value xsi:type="CD" code="LA28397-0" displayName="Often true" codeSystem="2.16.840.1.113883.6.1">
+                                                <translation code="1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            </value>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="SPRT">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+                                            <id root="0e9c5b7c-9def-11ee-8c90-0242ac120002"/>
+                                            <code code="88124-3" displayName="Food insecurity risk [HVS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime value="20100909"/>
+                                            <value xsi:type="CD" code="LA19952-3" displayName="At risk" codeSystem="2.16.840.1.113883.6.1"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- INSIDE PROBLEM OBSERVATION -->
+                                    <entryRelationship typeCode="COMP">
+                                        <act classCode="ACT" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.502" extension="2022-06-01"/>
+                                            <code code="77975-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Earliest date of diagnosis"/>
+                                            <statusCode code="completed"/>
+                                            <!-- SHALL to the year (MAY be more specific) -->
+                                            <effectiveTime value="20100101"/>
+                                        </act>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id extension="454" root="1.3.6.1.4.1.22812.3.99930.3.4.1.3"/>
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+                            <statusCode code="active" />
+                            <effectiveTime>
+                                <low value="20030101"/>
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                                    <id root="31f50d78-9870-11ee-b9d1-0242ac120002"/>
+                                    <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+                                    </code>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="2003"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="414916001" displayName="Obesity" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                    <entryRelationship typeCode="REFR">
+                                        <act classCode="ACT" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+                                            <!-- This ID equals the ID of the observatino for the scale assessment -->
+                                            <id extension="68993" root="1.2.840.114350.1.13.6289.1.7.2.768076"/>
+                                            <id root="093A5380-00CE-11E6-B4C5-0050568B000B" extension="1.1"/>
+                                            <!-- The code is nulled to "NP" Not Present" -->
+                                            <code nullFlavor="NP" />
+                                            <statusCode code="completed" />
+                                        </act>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
