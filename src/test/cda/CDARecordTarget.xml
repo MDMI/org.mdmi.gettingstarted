@@ -21,7 +21,7 @@
 			<id extension="444222222" root="2.16.840.1.113883.4.1" />
 			<id extension="555222222" root="2.16.840.1.113883.4.1" />
 			<id extension="666222222" root="2.16.840.1.113883.4.1" />
-			<addr use="HP">
+			<addr use="PUB">
 				<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 				<streetAddressLine>1111 Home Street</streetAddressLine>
 				<city>Beaverton</city>
@@ -36,7 +36,7 @@
 				</useablePeriod>
 				<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
 			</addr>
-			<addr use="HP">
+			<addr use="DIR">
 				<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 				<streetAddressLine>2222 Home Street</streetAddressLine>
 				<city>Beaverton</city>
@@ -47,7 +47,7 @@
 			</addr>
 
 
-			<addr use="HP">
+			<addr use="BAD">
 				<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
 				<streetAddressLine>333 Home Street</streetAddressLine>
 				<city>Beaverton</city>
@@ -67,7 +67,7 @@
 			<telecom value="fax:+1(555)555-8888" use="PUB" />
 			<telecom value="fax:+1(555)555-9999" use="TMP" />
 			<patient>
-				<name use="L">
+				<name use="A">
 					<given>Eve</given>
 					<!-- The "SP" is "Spouse" from HL7 Code System EntityNamePartQualifier 
 						2.16.840.1.113883.5.43 -->
@@ -77,7 +77,7 @@
 						<high value="20100510" />
 					</validTime>
 				</name>
-				<name use="L">
+				<name use="C">
 					<given>Eve</given>
 					<!-- The "SP" is "Spouse" from HL7 Code System EntityNamePartQualifier 
 						2.16.840.1.113883.5.43 -->
