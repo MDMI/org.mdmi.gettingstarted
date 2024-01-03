@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><Bundle>
+    <type value="transaction"/>
+    <entry>
+        <resource>
+            <Patient>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+                    <valueCodeableConcept>
+                        <coding>
+                            <code value="1013"/>
+                            <display value="Christian (non-Catholic, non-specific)"/>
+                            <system value="2.16.840.1.113883.5.1076"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+                    <valueAddress>
+                        <city value="Beaverton"/>
+                        <country value="US"/>
+                        <line value="[4444 Home Street]"/>
+                        <postalCode value="97867"/>
+                        <state value="OR"/>
+                    </valueAddress>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2106-3"/>
+                            <display value="White"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="White"/>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2106-3"/>
+                            <display value="White"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2108-9"/>
+                            <display value="European"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2108-9"/>
+                            <display value="European"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2135-2"/>
+                            <display value="Hispanic or Latino"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="text">
+                        <valueString value="Hispanic or Latino"/>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="2135-2"/>
+                            <display value="Hispanic or Latino"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="20146-9"/>
+                            <display value="Spanish Basque"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="ombCategory">
+                        <valueCoding>
+                            <code value="20146-9"/>
+                            <display value="Spanish Basque"/>
+                            <system value="2.16.840.1.113883.6.238"/>
+                        </valueCoding>
+                    </extension>
+                </extension>
+                <identifier>
+                    <system value="urn:oid:1.3.6.1.4.1.22812.3.2009316.3"/>
+                    <value value="160920144139807"/>
+                </identifier>
+                <meta/>
+                <name>
+                    <family value="Jones"/>
+                    <given value="Myra"/>
+                    <use value="usual"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <use value="mobile"/>
+                    <value value="+1(565)867-5309"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1947-05-01"/>
+                <address>
+                    <city value="Beaverton"/>
+                    <line value="1357 Amber Drive"/>
+                    <postalCode value="97006"/>
+                    <state value="OR"/>
+                    <use value="home"/>
+                </address>
+                <maritalStatus>
+                    <coding>
+                        <code value="M"/>
+                        <display value="Married"/>
+                        <system value="urn:oid:2.16.840.1.113883.5.2"/>
+                    </coding>
+                    <text value="Married"/>
+                </maritalStatus>
+                <communication>
+                    <language>
+                        <coding>
+                            <display value="en"/>
+                        </coding>
+                    </language>
+                    <preferred value="true"/>
+                </communication>
+                <managingOrganization>
+                    <display value="Organization/1.3.6.1.4.1.22812.3.2009316.3::3"/>
+                </managingOrganization>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <ExplanationOfBenefit>
+                <meta/>
+                <patient>
+                    <display value="Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"/>
+                </patient>
+                <insurer>
+                    <display value="Organization/1.3.6.1.4.1.22812.3.2009316.3::3"/>
+                </insurer>
+            </ExplanationOfBenefit>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <meta/>
+                <subject>
+                    <display value="/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"/>
+                </subject>
+            </DiagnosticReport>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <RelatedPerson>
+                <meta/>
+                <patient>
+                    <display value="Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"/>
+                </patient>
+                <relationship>
+                    <coding>
+                        <code value="POWATT"/>
+                        <display value="Power of Attorney"/>
+                        <system value="urn:oid:2.16.840.1.113883.5.111"/>
+                    </coding>
+                    <text value="Power of Attorney"/>
+                </relationship>
+                <relationship>
+                    <coding>
+                        <code value="GRD"/>
+                        <display value="Guardian"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0063"/>
+                    </coding>
+                    <text value="Guardian"/>
+                </relationship>
+                <name>
+                    <family value="Betterhalf"/>
+                    <given value="Boris"/>
+                    <given value="Bo"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <use value="mobile"/>
+                    <value value="+1(555)555-2008"/>
+                </telecom>
+                <address>
+                    <city value="Beaverton"/>
+                    <line value="123 main street"/>
+                    <postalCode value="97867"/>
+                    <state value="OR"/>
+                    <use value="home"/>
+                </address>
+            </RelatedPerson>
+        </resource>
+    </entry>
+    <entry>
+        <resource>
+            <Organization>
+                <identifier>
+                    <system value="urn:oid:1.3.6.1.4.1.22812.3.2009316.3"/>
+                    <value value="3"/>
+                </identifier>
+                <type>
+                    <coding>
+                        <code value="prov"/>
+                        <display value="Healthcare Provider"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+                    </coding>
+                    <text value="Healthcare Provider"/>
+                </type>
+                <name value="Primary Care's Partners Test"/>
+                <address>
+                    <city value="Chicago"/>
+                    <line value="123 main street"/>
+                    <postalCode value="60629"/>
+                    <state value="IL"/>
+                    <use value="home"/>
+                </address>
+                <contact>
+                    <telecom>
+                        <system value="phone"/>
+                        <use value="work"/>
+                        <value value="+1-(676)857-6769"/>
+                    </telecom>
+                </contact>
+            </Organization>
+        </resource>
+    </entry>
+</Bundle>
