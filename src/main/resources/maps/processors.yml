@@ -5,11 +5,22 @@ preprocessors:
        class: org.mdmi.processors.cda.CDAPreProcesor
        groups:
          - CDAR2
-    v2:
-       name: CDAPreProcesor
-       class: org.mdmi.processors.cda.CDAPreProcesor
+    fhir:
+       name: PreProcessorForFHIRJson
+       class: org.mdmi.processors.fhir.PreProcessorForFHIRJson
        groups:
-         - HL7V2         
+         - FHIRR4JSON         
+postprocessors:
+    fhir:
+       name: FHIRR4PostProcessorJson
+       class: org.mdmi.processors.fhir.FHIRR4PostProcessorJson
+       groups:
+         - FHIRR4JSON
+    cda:
+       name: CDAPostProcessor
+       class: org.mdmi.processors.cda.CDAPostProcessor
+       groups:
+         - CDAR2
 sourcesemanticprocessors:
     sourcelog:
         name: SourceLogSemantic
