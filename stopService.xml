@@ -1,8 +1,8 @@
 
-<project name="transform" default="startService" basedir=".">
+<project name="transform" default="stopService" basedir=".">
 
 
-<target name="startService">
+<target name="stopService">
 <exec   executable="docker" >
     <arg value="compose"/>
 	

@@ -54,22 +54,6 @@
                             {
                                 "valueCoding": {
                                     "system": "2.16.840.1.113883.6.238",
-                                    "code": "2106-3",
-                                    "display": "White"
-                                },
-                                "url": "ombCategory"
-                            },
-                            {
-                                "valueCoding": {
-                                    "system": "2.16.840.1.113883.6.238",
-                                    "code": "2108-9",
-                                    "display": "European"
-                                },
-                                "url": "ombCategory"
-                            },
-                            {
-                                "valueCoding": {
-                                    "system": "2.16.840.1.113883.6.238",
                                     "code": "2108-9",
                                     "display": "European"
                                 },
@@ -91,22 +75,6 @@
                             {
                                 "valueString": "Hispanic or Latino",
                                 "url": "text"
-                            },
-                            {
-                                "valueCoding": {
-                                    "system": "2.16.840.1.113883.6.238",
-                                    "code": "2135-2",
-                                    "display": "Hispanic or Latino"
-                                },
-                                "url": "ombCategory"
-                            },
-                            {
-                                "valueCoding": {
-                                    "system": "2.16.840.1.113883.6.238",
-                                    "code": "20146-9",
-                                    "display": "Spanish Basque"
-                                },
-                                "url": "ombCategory"
                             },
                             {
                                 "valueCoding": {
