@@ -22,17 +22,17 @@
          <id />
          <id />
          <id nullFlavor="UNK" />
-         <addr>
+         <addr use="H">
             <city>Beaverton</city>
             <postalCode>97006</postalCode>
             <state>OR</state>
             <streetAddressLine>1357 Amber Drive</streetAddressLine>
          </addr>
          <addr nullFlavor="UNK" />
-         <telecom use="M" value="tel:+1(565)867-5309" />
+         <telecom use="MC" value="tel:+1(565)867-5309" />
          <telecom nullFlavor="UNK" />
          <patient>
-            <name>
+            <name use="L">
                <family>Jones</family>
                <given>Myra</given>
             </name>
@@ -90,43 +90,43 @@
             <telecom use="WP" value="tel:+1-(676)857-6769" />
             <telecom use="WP" value="tel:+1-(676)857-6769" />
             <telecom use="WP" value="tel:+1-(676)857-6769" />
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
                <streetAddressLine>123 main street</streetAddressLine>
             </addr>
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
                <streetAddressLine>123 main street</streetAddressLine>
             </addr>
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
                <streetAddressLine>123 main street</streetAddressLine>
             </addr>
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
                <streetAddressLine>123 main street</streetAddressLine>
             </addr>
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
                <streetAddressLine>123 main street</streetAddressLine>
             </addr>
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
                <streetAddressLine>123 main street</streetAddressLine>
             </addr>
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
@@ -148,13 +148,13 @@
                <code code="POWATT"
                      codeSystem="2.16.840.1.113883.5.111"
                      displayName="Power of Attorney" />
-               <addr>
+               <addr use="H">
                   <city>Beaverton</city>
                   <postalCode>97867</postalCode>
                   <state>OR</state>
                   <streetAddressLine>123 main street</streetAddressLine>
                </addr>
-               <telecom use="M" value="tel:+1(555)555-2008" />
+               <telecom use="MC" value="tel:+1(555)555-2008" />
                <guardianPerson>
                   <name>
                      <family>Betterhalf</family>
@@ -177,7 +177,7 @@
             <telecom nullFlavor="UNK" />
             <telecom use="WP" value="tel:+1-(676)857-6769" />
             <addr nullFlavor="UNK" />
-            <addr>
+            <addr use="H">
                <city>Chicago</city>
                <postalCode>60629</postalCode>
                <state>IL</state>
@@ -270,7 +270,7 @@
                   <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
                   <name>Primary Care's Partners Test</name>
                   <telecom use="WP" value="tel:+1-(676)857-6769" />
-                  <addr>
+                  <addr use="H">
                      <city>Chicago</city>
                      <postalCode>60629</postalCode>
                      <state>IL</state>
