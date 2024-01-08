@@ -26,14 +26,6 @@
                             {
                                 "valueString": "White",
                                 "url": "text"
-                            },
-                            {
-                                "valueCoding": {
-                                    "system": "2.16.840.1.113883.6.238",
-                                    "code": "2106-3",
-                                    "display": "White"
-                                },
-                                "url": "ombCategory"
                             }
                         ],
                         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
@@ -51,14 +43,6 @@
                             {
                                 "valueString": "Hispanic or Latino",
                                 "url": "text"
-                            },
-                            {
-                                "valueCoding": {
-                                    "system": "2.16.840.1.113883.6.238",
-                                    "code": "2135-2",
-                                    "display": "Hispanic or Latino"
-                                },
-                                "url": "ombCategory"
                             }
                         ],
                         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
