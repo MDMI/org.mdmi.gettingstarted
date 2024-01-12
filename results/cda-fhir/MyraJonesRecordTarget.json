@@ -54,22 +54,6 @@
               {
                 "valueCoding": {
                   "system": "2.16.840.1.113883.6.238",
-                  "code": "2106-3",
-                  "display": "White"
-                },
-                "url": "ombCategory"
-              },
-              {
-                "valueCoding": {
-                  "system": "2.16.840.1.113883.6.238",
-                  "code": "2076-8",
-                  "display": "Hawaiian or Other P      acific Islander"
-                },
-                "url": "ombCategory"
-              },
-              {
-                "valueCoding": {
-                  "system": "2.16.840.1.113883.6.238",
                   "code": "2076-8",
                   "display": "Hawaiian or Other P      acific Islander"
                 },
@@ -91,22 +75,6 @@
               {
                 "valueString": "Hispanic or Latino",
                 "url": "text"
-              },
-              {
-                "valueCoding": {
-                  "system": "2.16.840.1.113883.6.238",
-                  "code": "2135-2",
-                  "display": "Hispanic or Latino"
-                },
-                "url": "ombCategory"
-              },
-              {
-                "valueCoding": {
-                  "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-                  "code": "OTH",
-                  "display": "other"
-                },
-                "url": "ombCategory"
               },
               {
                 "valueCoding": {
