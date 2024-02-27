@@ -5,8 +5,8 @@ services:
     mem_reservation: 4048m
     container_name: mdmi-gettingstarted
     environment:
-      - JAVA_OPTS="-Xmx6048m -DLOGGING_LEVEL_ROOT=TRACE -DLOGGING_LEVEL_MDMI=TRACE"
-      - LOGGING_LEVEL_MDMI=TRACE
+      - JAVA_OPTS="-Xmx6048m -DLOGGING_LEVEL_ROOT=INFO -DLOGGING_LEVEL_MDMI=INFO"
+      - LOGGING_LEVEL_MDMI=INFO
     network_mode: default
     ports:
       - "8282:8282"
