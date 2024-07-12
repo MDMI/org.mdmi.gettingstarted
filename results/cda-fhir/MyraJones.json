@@ -1,8 +1,4 @@
 {
-	"identifier": {
-		"system": "urn:ietf:rfc:3986",
-		"value": "973c7e16-05dd-484f-a780-e80904fd8ff0"
-	},
 	"entry": [
 		{
 			"request": {
@@ -55,14 +51,6 @@
 							{
 								"valueString": "Hispanic or Latino",
 								"url": "text"
-							},
-							{
-								"valueCoding": {
-									"system": "2.16.840.1.113883.6.238",
-									"code": "2135-2",
-									"display": "Hispanic or Latino"
-								},
-								"url": "detailed"
 							}
 						],
 						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
@@ -73,16 +61,12 @@
 						"city": "Beaverton",
 						"use": "home",
 						"line": [
-							"undefined"
+							"1357 Amber Drive"
 						],
 						"postalCode": "97006",
 						"state": "OR"
 					}
 				],
-				"managingOrganization": {
-					"reference": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3",
-					"display": "Primary Care's Partners Test"
-				},
 				"gender": "female",
 				"meta": {
 					"tag": [
@@ -102,7 +86,7 @@
 						"family": "Jones"
 					}
 				],
-				"id": "f0a0584b-c241-4249-95ad-4036f5625ba8",
+				"id": "ed5c2420-0163-40ec-a1aa-c4ff453627b3",
 				"communication": [
 					{
 						"language": {
@@ -119,7 +103,7 @@
 				"birthDate": "1947-05-01",
 				"resourceType": "Patient"
 			},
-			"fullUrl": "Patient/f0a0584b-c241-4249-95ad-4036f5625ba8"
+			"fullUrl": "Patient/ed5c2420-0163-40ec-a1aa-c4ff453627b3"
 		},
 		{
 			"request": {
@@ -139,10 +123,7 @@
 				],
 				"address": [
 					{
-						"use": "home",
-						"line": [
-							"undefined"
-						]
+						"use": "home"
 					}
 				],
 				"meta": {
@@ -162,55 +143,10 @@
 						"family": "abc"
 					}
 				],
-				"telecom": [
-					{
-						"system": "email",
-						"use": "work",
-						"value": "provider@allsripts.com"
-					}
-				],
-				"id": "479f953f-fe0a-431b-8e50-ec83d5eaae4a",
+				"id": "ebbeea87-672a-4488-a3ea-4418ecc12543",
 				"resourceType": "Practitioner"
 			},
-			"fullUrl": "Practitioner/479f953f-fe0a-431b-8e50-ec83d5eaae4a"
-		},
-		{
-			"request": {
-				"method": "POST",
-				"url": "Practitioner"
-			},
-			"resource": {
-				"address": [
-					{
-						"city": "Chicago",
-						"use": "home",
-						"line": [
-							"undefined"
-						],
-						"postalCode": "60629",
-						"state": "IL"
-					}
-				],
-				"meta": {
-					"tag": [
-						{
-							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-							"code": "SUBSETTED",
-							"display": "Resource encoded in summary mode"
-						}
-					]
-				},
-				"telecom": [
-					{
-						"system": "phone",
-						"use": "work",
-						"value": "+1-(676)857-6769"
-					}
-				],
-				"id": "f858c9e0-dd6a-4ca9-b4cf-3a624786c15b",
-				"resourceType": "Practitioner"
-			},
-			"fullUrl": "Practitioner/f858c9e0-dd6a-4ca9-b4cf-3a624786c15b"
+			"fullUrl": "Practitioner/ebbeea87-672a-4488-a3ea-4418ecc12543"
 		},
 		{
 			"request": {
@@ -229,7 +165,7 @@
 						"country": "US",
 						"city": "Ann Arbor",
 						"line": [
-							"undefined"
+							"1021 Health Drive"
 						],
 						"postalCode": "99099",
 						"state": "MI"
@@ -252,10 +188,66 @@
 						"family": "Assigned"
 					}
 				],
-				"id": "06d8cfd0-40c6-4cf9-b1c5-503f39fdf001",
+				"id": "56cd987c-2f04-43c9-abc4-a1d944e718aa",
 				"resourceType": "Practitioner"
 			},
-			"fullUrl": "Practitioner/06d8cfd0-40c6-4cf9-b1c5-503f39fdf001"
+			"fullUrl": "Practitioner/56cd987c-2f04-43c9-abc4-a1d944e718aa"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Provenance"
+			},
+			"resource": {
+				"agent": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+									"code": "author",
+									"display": "Author"
+								}
+							],
+							"text": "Author"
+						}
+					},
+					{
+						"onBehalfOf": {
+							"reference": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3",
+							"display": "Primary Care's Partners Test"
+						},
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+									"code": "author",
+									"display": "Author"
+								}
+							],
+							"text": "Author"
+						}
+					},
+					{
+						"onBehalfOf": {
+							"reference": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3",
+							"display": "Primary Care's Partners Test"
+						}
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "663b60f7-1524-45a8-8c38-510f0f600383",
+				"resourceType": "Provenance"
+			},
+			"fullUrl": "Provenance/663b60f7-1524-45a8-8c38-510f0f600383"
 		},
 		{
 			"request": {
@@ -274,7 +266,7 @@
 						"city": "Chicago",
 						"use": "home",
 						"line": [
-							"undefined"
+							"123 main street"
 						],
 						"postalCode": "60629",
 						"state": "IL"
@@ -289,11 +281,302 @@
 						}
 					]
 				},
+				"contact": [
+					{
+						"telecom": [
+							{
+								"system": "phone",
+								"use": "work",
+								"value": "+1-(676)857-6769"
+							}
+						]
+					}
+				],
 				"name": "Primary Care's Partners Test",
-				"id": "2aa48a30-e308-4996-bca7-5db1e57b8c9d",
+				"id": "6d12536f-2511-4c29-afde-883066c45ada",
 				"resourceType": "Organization"
 			},
-			"fullUrl": "Organization/2aa48a30-e308-4996-bca7-5db1e57b8c9d"
+			"fullUrl": "Organization/6d12536f-2511-4c29-afde-883066c45ada"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Procedure"
+			},
+			"resource": {
+				"recorder": {
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::92698",
+					"display": " Provider abc"
+				},
+				"performer": [
+					{
+						"actor": {
+							"reference": "1.3.6.1.4.1.22812.3.2009316.3::92698",
+							"display": " Provider abc"
+						}
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"report": [
+					{
+						"reference": "1.3.6.1.4.1.22812.20.1.1.4.5::1"
+					}
+				],
+				"id": "b63d6e7c-7d6b-410a-90bf-4463bbd86f92",
+				"resourceType": "Procedure"
+			},
+			"fullUrl": "Procedure/b63d6e7c-7d6b-410a-90bf-4463bbd86f92"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Immunization"
+			},
+			"resource": {
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"protocolApplied": [
+					{
+						"authority": {
+							"reference": "1.3.6.1.4.1.22812.3.2009316.3::3",
+							"display": "Primary Care's Partners Test"
+						}
+					}
+				],
+				"id": "6df629c1-b658-4a28-abcd-55091b78a1d5",
+				"resourceType": "Immunization",
+				"manufacturer": {
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::3",
+					"display": "Primary Care's Partners Test"
+				}
+			},
+			"fullUrl": "Immunization/6df629c1-b658-4a28-abcd-55091b78a1d5"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Encounter"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+					}
+				],
+				"period": {
+					"start": "2012-08-15T10:00:00-08:00"
+				},
+				"hospitalization": {
+					"origin": {
+						"reference": "1.3.6.1.4.1.22812.3.2009316.3::3",
+						"display": "Primary Care's Partners Test"
+					},
+					"destination": {
+						"reference": "1.3.6.1.4.1.22812.3.2009316.3::3",
+						"display": "Primary Care's Partners Test"
+					}
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"serviceProvider": {
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::3",
+					"display": "Primary Care's Partners Test"
+				},
+				"diagnosis": [
+					{
+						"condition": {
+							"reference": "1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
+						}
+					},
+					{
+						"condition": {
+							"reference": "/urn:ietf:rfc:3986::db734647-fc99-424c-a864-7e3cda82e704"
+						}
+					}
+				],
+				"id": "f67adf1f-c91c-40f3-a6a7-a007cc98f8eb",
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.12",
+								"code": "99213",
+								"display": "Office outpatient visit 15 minutes"
+							}
+						],
+						"text": "Office outpatient visit 15 minutes"
+					}
+				],
+				"class": {
+					"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+					"code": "IMP",
+					"display": "inpatient encounter"
+				},
+				"participant": [
+					{
+						"individual": {
+							"display": " Provider abc",
+							"id": "1.3.6.1.4.1.22812.3.2009316.3::92698"
+						}
+					},
+					{
+						"type": [
+							{
+								"coding": [
+									{
+										"system": "urn:oid:2.16.840.1.113883.6.101",
+										"code": "207R00000X",
+										"display": "Internal Medicine"
+									}
+								],
+								"text": "Internal Medicine"
+							},
+							{
+								"coding": [
+									{
+										"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationTypehttp://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+										"code": "PPR",
+										"display": "primary performer"
+									}
+								],
+								"text": "primary performer"
+							}
+						]
+					}
+				],
+				"resourceType": "Encounter",
+				"status": "unknown"
+			},
+			"fullUrl": "Encounter/f67adf1f-c91c-40f3-a6a7-a007cc98f8eb"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "AllergyIntolerance"
+			},
+			"resource": {
+				"recorder": {
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::92698",
+					"display": " Provider abc"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "1e8b1b44-de95-4998-b752-27082d62b6f5",
+				"resourceType": "AllergyIntolerance"
+			},
+			"fullUrl": "AllergyIntolerance/1e8b1b44-de95-4998-b752-27082d62b6f5"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"recorder": {
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::92698",
+					"display": " Provider abc"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "95c7017e-421c-44ca-8747-cbae19165189",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/95c7017e-421c-44ca-8747-cbae19165189"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationAdministration"
+			},
+			"resource": {
+				"performer": [
+					{
+						"actor": {
+							"reference": "1.3.6.1.4.1.22812.3.2009316.3::92698",
+							"display": " Provider abc"
+						}
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "7cabb966-3351-4c84-8e33-651a223f5cd8",
+				"resourceType": "MedicationAdministration"
+			},
+			"fullUrl": "MedicationAdministration/7cabb966-3351-4c84-8e33-651a223f5cd8"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "DiagnosticReport"
+			},
+			"resource": {
+				"resultsInterpreter": [
+					{
+						"reference": "1.3.6.1.4.1.22812.3.2009316.3::92698",
+						"display": " Provider abc"
+					},
+					{
+						"reference": "1.3.6.1.4.1.22812.3.2009316.3::92698",
+						"display": " Provider abc"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "363b75cd-4604-4453-889b-1ea046ec5fb9",
+				"resourceType": "DiagnosticReport"
+			},
+			"fullUrl": "DiagnosticReport/363b75cd-4604-4453-889b-1ea046ec5fb9"
 		},
 		{
 			"request": {
@@ -347,9 +630,10 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::160920144139807",
+					"display": " Myra Jones"
 				},
-				"id": "a3fcd5d9-0452-43de-aea7-1ed6fcc84b22",
+				"id": "780aec7a-1724-4954-b2ef-afe1c2c88349",
 				"category": [
 					{
 						"coding": [
@@ -366,13 +650,14 @@
 								"code": "problem-list-item",
 								"display": "Problem List Item"
 							}
-						]
+						],
+						"text": "Problem List Item"
 					}
 				],
 				"onsetDateTime": "2012-08-06",
 				"resourceType": "Condition"
 			},
-			"fullUrl": "Condition/a3fcd5d9-0452-43de-aea7-1ed6fcc84b22"
+			"fullUrl": "Condition/780aec7a-1724-4954-b2ef-afe1c2c88349"
 		},
 		{
 			"request": {
@@ -426,9 +711,10 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::160920144139807",
+					"display": " Myra Jones"
 				},
-				"id": "8fbe7ccd-9297-4bc4-a609-2df62de54907",
+				"id": "22dd9e81-8214-41b7-81b2-399fd3ef4bc5",
 				"category": [
 					{
 						"coding": [
@@ -445,12 +731,13 @@
 								"code": "problem-list-item",
 								"display": "Problem List Item"
 							}
-						]
+						],
+						"text": "Problem List Item"
 					}
 				],
 				"resourceType": "Condition"
 			},
-			"fullUrl": "Condition/8fbe7ccd-9297-4bc4-a609-2df62de54907"
+			"fullUrl": "Condition/22dd9e81-8214-41b7-81b2-399fd3ef4bc5"
 		},
 		{
 			"request": {
@@ -499,7 +786,7 @@
 								"text": "Hives"
 							}
 						],
-						"id": "Organization/urn:ietf:rfc:3986"
+						"id": "urn:ietf:rfc:3986"
 					}
 				],
 				"meta": {
@@ -512,7 +799,8 @@
 					]
 				},
 				"patient": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::160920144139807",
+					"display": " Myra Jones"
 				},
 				"id": "545077400001",
 				"clinicalStatus": {
@@ -522,7 +810,8 @@
 							"code": "active",
 							"display": "Active"
 						}
-					]
+					],
+					"text": "Active"
 				},
 				"type": "intolerance",
 				"category": [
@@ -562,10 +851,17 @@
 						}
 					]
 				},
-				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-				},
 				"id": "cdbd33f0-6cde-11db-9fe1-0800200c9a66",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "582498",
+							"display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+						}
+					],
+					"text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+				},
 				"resourceType": "MedicationAdministration",
 				"status": "in-progress"
 			},
@@ -619,14 +915,15 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::160920144139807",
+					"display": " Myra Jones"
 				},
-				"id": "cc20ba79-fd69-4bc0-8970-0e2d8f479b0c",
+				"id": "0b8279e5-7c09-4869-9176-3f8bac65c3df",
 				"performedDateTime": "2012-08-06",
 				"resourceType": "Procedure",
 				"status": "completed"
 			},
-			"fullUrl": "Procedure/cc20ba79-fd69-4bc0-8970-0e2d8f479b0c"
+			"fullUrl": "Procedure/0b8279e5-7c09-4869-9176-3f8bac65c3df"
 		},
 		{
 			"request": {
@@ -654,7 +951,8 @@
 									"code": "AP",
 									"display": "Administering Provider"
 								}
-							]
+							],
+							"text": "Administering Provider"
 						}
 					}
 				],
@@ -668,10 +966,11 @@
 					]
 				},
 				"patient": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::160920144139807",
+					"display": " Myra Jones"
 				},
 				"occurrenceDateTime": "2010-08-15",
-				"id": "a2f83698-b714-4c69-b908-83affa3cae7e",
+				"id": "7d27ab3d-1139-4b69-a06d-35d8fbe33062",
 				"lotNumber": "1",
 				"recorded": "2010-08-15",
 				"vaccineCode": {
@@ -687,7 +986,7 @@
 				"resourceType": "Immunization",
 				"status": "completed"
 			},
-			"fullUrl": "Immunization/a2f83698-b714-4c69-b908-83affa3cae7e"
+			"fullUrl": "Immunization/7d27ab3d-1139-4b69-a06d-35d8fbe33062"
 		},
 		{
 			"request": {
@@ -736,10 +1035,7 @@
 						}
 					]
 				},
-				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-				},
-				"id": "5041cb37-b1ce-4e51-befb-b2b444740a6b",
+				"id": "8b4d47c1-45da-4347-b5e0-7100a4eaee9d",
 				"category": [
 					{
 						"coding": [
@@ -748,13 +1044,14 @@
 								"code": "social-history",
 								"display": "Social History"
 							}
-						]
+						],
+						"text": "Social History"
 					}
 				],
 				"resourceType": "Observation",
 				"status": "final"
 			},
-			"fullUrl": "Observation/5041cb37-b1ce-4e51-befb-b2b444740a6b"
+			"fullUrl": "Observation/8b4d47c1-45da-4347-b5e0-7100a4eaee9d"
 		},
 		{
 			"request": {
@@ -777,10 +1074,6 @@
 					],
 					"text": "Urinanalysis macro (dipstick) panel"
 				},
-				"effectivePeriod": {
-					"start": "2015-06-22",
-					"end": "2015-06-22"
-				},
 				"meta": {
 					"tag": [
 						{
@@ -790,14 +1083,11 @@
 						}
 					]
 				},
-				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-				},
-				"id": "db941cab-1de7-46cb-84fc-e00e7d9d271c",
+				"id": "500106cf-6bcf-4873-ba1f-074835826cb1",
 				"resourceType": "DiagnosticReport",
 				"status": "final"
 			},
-			"fullUrl": "DiagnosticReport/db941cab-1de7-46cb-84fc-e00e7d9d271c"
+			"fullUrl": "DiagnosticReport/500106cf-6bcf-4873-ba1f-074835826cb1"
 		},
 		{
 			"request": {
@@ -836,10 +1126,7 @@
 						}
 					]
 				},
-				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-				},
-				"id": "a37d0a3d-d9ec-4119-808f-f027c0bf64d0",
+				"id": "f97bbb49-62ae-46fa-9647-05615a2d70f8",
 				"category": [
 					{
 						"coding": [
@@ -848,7 +1135,8 @@
 								"code": "vital-signs",
 								"display": "Vital Signs"
 							}
-						]
+						],
+						"text": "Vital Signs"
 					}
 				],
 				"resourceType": "Observation",
@@ -858,82 +1146,7 @@
 					"value": 80
 				}
 			},
-			"fullUrl": "Observation/a37d0a3d-d9ec-4119-808f-f027c0bf64d0"
-		},
-		{
-			"request": {
-				"method": "POST",
-				"url": "Encounter"
-			},
-			"resource": {
-				"identifier": [
-					{
-						"system": "urn:ietf:rfc:3986",
-						"value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
-					}
-				],
-				"period": {
-					"start": "2012-08-15T10:00:00-08:00"
-				},
-				"meta": {
-					"tag": [
-						{
-							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-							"code": "SUBSETTED",
-							"display": "Resource encoded in summary mode"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-				},
-				"id": "5223fe69-1136-461f-998f-4df649a9e699",
-				"type": [
-					{
-						"coding": [
-							{
-								"system": "urn:oid:2.16.840.1.113883.6.12",
-								"code": "99213",
-								"display": "Office outpatient visit 15 minutes"
-							}
-						],
-						"text": "Office outpatient visit 15 minutes"
-					}
-				],
-				"class": {
-					"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-					"code": "IMP",
-					"display": "inpatient encounter"
-				},
-				"participant": [
-					{
-						"type": [
-							{
-								"coding": [
-									{
-										"system": "urn:oid:2.16.840.1.113883.6.101",
-										"code": "207R00000X",
-										"display": "Internal Medicine"
-									}
-								],
-								"text": "Internal Medicine"
-							},
-							{
-								"coding": [
-									{
-										"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationTypehttp://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-										"code": "PPR",
-										"display": "primary performer"
-									}
-								]
-							}
-						]
-					}
-				],
-				"resourceType": "Encounter",
-				"status": "unknown"
-			},
-			"fullUrl": "Encounter/5223fe69-1136-461f-998f-4df649a9e699"
+			"fullUrl": "Observation/f97bbb49-62ae-46fa-9647-05615a2d70f8"
 		},
 		{
 			"request": {
@@ -983,10 +1196,7 @@
 						}
 					]
 				},
-				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-				},
-				"id": "df612931-506c-4352-833b-7b4c11a238ec",
+				"id": "d97f69f5-1187-4d42-9deb-68d87738950c",
 				"category": [
 					{
 						"coding": [
@@ -995,7 +1205,8 @@
 								"code": "laboratory",
 								"display": "Laboratory"
 							}
-						]
+						],
+						"text": "Laboratory"
 					}
 				],
 				"resourceType": "Observation",
@@ -1004,7 +1215,76 @@
 					"value": 1.015
 				}
 			},
-			"fullUrl": "Observation/df612931-506c-4352-833b-7b4c11a238ec"
+			"fullUrl": "Observation/d97f69f5-1187-4d42-9deb-68d87738950c"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
+						"value": "13"
+					}
+				],
+				"note": [
+					{
+						"text": "Specific gravity of Urine by Test strip 1.015 Range: SDWG Example agreed to ID reference here since moving to td would mean text 'Range' is in observation 1.005 - 1.030"
+					}
+				],
+				"referenceRange": [
+					{
+						"high": {
+							"value": 1.03
+						},
+						"low": {
+							"value": 1.005
+						},
+						"text": "1.005 - 1.030"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.1",
+							"code": "5811-5",
+							"display": "Specific gravity of Urine by Test strip"
+						}
+					],
+					"text": "Specific gravity of Urine by Test strip"
+				},
+				"effectiveDateTime": "2014-06-06T10:32:00-05:00",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "9dda2cb9-0067-46ee-9c71-4442c3852808",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory",
+								"display": "Laboratory"
+							}
+						],
+						"text": "Laboratory"
+					}
+				],
+				"resourceType": "Observation",
+				"status": "final",
+				"valueQuantity": {
+					"value": 1.015
+				}
+			},
+			"fullUrl": "Observation/9dda2cb9-0067-46ee-9c71-4442c3852808"
 		},
 		{
 			"request": {
@@ -1038,9 +1318,10 @@
 					]
 				},
 				"subject": {
-					"reference": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::160920144139807",
+					"display": " Myra Jones"
 				},
-				"id": "80afd57c-2de9-4e42-9393-e5b06baecf2b",
+				"id": "f020616f-1f60-422c-9db8-4377d4c99711",
 				"category": [
 					{
 						"coding": [
@@ -1049,13 +1330,252 @@
 								"code": "encounter-diagnosis",
 								"display": "Encounter Diagnosis"
 							}
-						]
+						],
+						"text": "Encounter Diagnosis"
 					}
 				],
 				"onsetDateTime": "2012-08-15",
 				"resourceType": "Condition"
 			},
-			"fullUrl": "Condition/80afd57c-2de9-4e42-9393-e5b06baecf2b"
+			"fullUrl": "Condition/f020616f-1f60-422c-9db8-4377d4c99711"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Immunization"
+			},
+			"resource": {
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "f803537c-549d-4ae9-a646-7ccce65b9c54",
+				"resourceType": "Immunization",
+				"manufacturer": {
+					"reference": "1.3.6.1.4.1.22812.3.2009316.3::3",
+					"display": "Primary Care's Partners Test"
+				}
+			},
+			"fullUrl": "Immunization/f803537c-549d-4ae9-a646-7ccce65b9c54"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545069300001"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545069300001"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545077400017"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545077400019"
+					},
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "db734647-fc99-424c-a864-7e3cda82e704"
+					}
+				],
+				"note": [
+					{
+						"text": "Pneumonia"
+					},
+					{
+						"text": "Asthma"
+					}
+				],
+				"recorder": {
+					"reference": "2.16.840.1.113883.19.5.9999.456::2981824",
+					"display": " Amanda Assigned"
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "233604007"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.103",
+							"code": "486"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.90",
+							"code": "J18.9"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+							"code": "87580"
+						}
+					],
+					"text": "Pneumonia"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "0225c268-151b-4941-bee2-15687127c11e",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006"
+							}
+						]
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					},
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006"
+							}
+						]
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "encounter-diagnosis",
+								"display": "Encounter Diagnosis"
+							}
+						],
+						"text": "Encounter Diagnosis"
+					}
+				],
+				"onsetDateTime": "2012-08-06",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/0225c268-151b-4941-bee2-15687127c11e"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "AllergyIntolerance"
+			},
+			"resource": {
+				"recorder": {
+					"reference": "2.16.840.1.113883.19.5.9999.456::2981824",
+					"display": " Amanda Assigned"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "45e079e8-73ca-4c8a-91c3-5ec90a2064f1",
+				"resourceType": "AllergyIntolerance"
+			},
+			"fullUrl": "AllergyIntolerance/45e079e8-73ca-4c8a-91c3-5ec90a2064f1"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Procedure"
+			},
+			"resource": {
+				"recorder": {
+					"reference": "2.16.840.1.113883.19.5.9999.456::2981824",
+					"display": " Amanda Assigned"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "19c5df07-4ffb-455e-8661-6393cbede31a",
+				"resourceType": "Procedure"
+			},
+			"fullUrl": "Procedure/19c5df07-4ffb-455e-8661-6393cbede31a"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "DiagnosticReport"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
+						"value": "1"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.1",
+							"code": "24357-6"
+						}
+					],
+					"text": "Urinanalysis macro (dipstick) panel"
+				},
+				"resultsInterpreter": [
+					{
+						"reference": "2.16.840.1.113883.19.5.9999.456::2981824",
+						"display": " Amanda Assigned"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "82fb27a7-21b0-4b48-890d-413740f3c8ec",
+				"resourceType": "DiagnosticReport",
+				"status": "final"
+			},
+			"fullUrl": "DiagnosticReport/82fb27a7-21b0-4b48-890d-413740f3c8ec"
 		}
 	],
 	"meta": {
@@ -1067,6 +1587,6 @@
 			}
 		]
 	},
-	"type": "transaction",
+	"type": "batch",
 	"resourceType": "Bundle"
 }
