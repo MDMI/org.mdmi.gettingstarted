@@ -59,7 +59,7 @@
                                 <high nullFlavor="UNK"/>
                             </effectiveTime>
                             <effectiveTime xsi:type="PIVL_TS" operator="A">
-                                <period>
+                                <period xsi:type="IVL_PQ">
                                     <low value="4" unit="h"/>
                                     <high value="6" unit="h"/>
                                 </period>
@@ -160,7 +160,8 @@
                                     <!-- Instruction (V2) -->
                                     <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09"/>
                                     <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                                    <code code="422037009" displayName="Provider medication administration instructions" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                    <code code="1153465004" displayName="Education about overdosing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+<!--               information that vendors mapped:                    <code code="422037009" displayName="Provider medication administration instructions" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>--> 
                                     <text> Do not overtake</text>
                                     <statusCode code="completed"/>
                                 </act>

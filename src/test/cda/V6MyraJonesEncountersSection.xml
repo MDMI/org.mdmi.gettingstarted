@@ -17,6 +17,16 @@
     <effectiveTime value="20161003182710+0000" />
     <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
     <languageCode code="en-US" />
+    <componentOf>
+        <encompassingEncounter>
+            <id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
+            <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" code="99213" displayName="Office/outpatient established low mdm 20-29 min" />
+            <effectiveTime>
+                <low value="201208151000-0800" />
+                <high value="201208151000-0800" />
+            </effectiveTime>
+        </encompassingEncounter>
+    </componentOf>
     <component>
         <structuredBody>
             <component>
